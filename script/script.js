@@ -53,4 +53,22 @@ const setLike = obj => {
     likes[boton.id] = {...boton}
 }
 
+/*
+const setLike = obj => {
+    const boton = {
+        id: obj.querySelector('.btn-dark').dataset.id,
+        cantidad: 1
+    }
+
+    if(likes.hasOwnProperty(boton.id)){
+        if(likes[boton.id].cantidad === 1) boton.cantidad = 0;
+        if(likes[boton.id].cantidad === 0) boton.cantidad = 1;
+    }
+
+    obj.querySelector('#like').textContent = boton.cantidad;
+
+    likes[boton.id] = {...boton}
+}
+
+*/
 
